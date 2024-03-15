@@ -4,10 +4,6 @@
     "require": {},
     "extra": {
         "laravel": {
-            "providers": [
-                "App\\Calc\\CalculatorServiceProvider"
-            ],
-            "dont-discover": []
         }
     }
 }
