@@ -11,6 +11,7 @@ class CalculatorController extends Controller
         $result =  $a + $b;
         return view('calc::add', compact('result'));
     }
+    
 
     public function substract($a, $b) {
         $result = $a - $b;
