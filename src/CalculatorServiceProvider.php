@@ -20,6 +20,10 @@ class CalculatorServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        include __DIR__.'/routes.php';
+        include __DIR__.'/routes.php';  
+
+        $this->publishes([
+            __DIR__.'/routes.php' => config_path('routes.php'),
+        ], 'routes');
     }
 }
